@@ -1,0 +1,151 @@
+.hero {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.hero-caption {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+    color: #fff;
+}
+
+.caption-img {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.hero-caption p {
+    font-size: 17px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: background 0.3s ease;
+}
+
+.hero-btns .btn.dark-btn {
+    background: #6d6d6eb3;
+    color: white;
+}
+
+.hero-btns .btn:hover {
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.hero-btns .btn img {
+    width: 25px;
+}
+
+.more-cards {
+    padding: 6%;
+}
+
+@media (max-width: 1400px) {
+    .hero-caption .titleCards {
+        display: none;
+    }
+
+    .hero-btns {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-caption .titleCards {
+        display: none;
+    }
+
+    .hero-btns {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero-caption {
+        padding-left: 4%;
+    }
+
+    .caption-img {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .hero-caption p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+
+    .hero-btns .btn img {
+        width: 20px;
+    }
+
+    .more-cards {
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-caption {
+        padding-left: 2%;
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .caption-img {
+        display: none;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .hero-btns .btn {
+        padding: 6px 12px;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .hero-btns .btn img {
+        width: 15px;
+    }
+}
