@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 770px) {
     .hero-caption {
         padding-left: 2%;
     }
@@ -126,17 +126,30 @@
     .hero-caption p {
         font-size: 14px;
     }
+
+    .hero-btns .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 770px) and (min-width: 500px) {
+    .hero-caption {
+        padding-left: 2%;
+    }
+
+    .hero-caption p {
+        display: none;
+    }
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 680px)  {
     .caption-img {
         display: none;
     }
 
     .hero-caption p {
-        font-size: 12px;
-        margin-bottom: 8px;
+       display: none;
     }
 
     .hero-btns .btn {
@@ -147,5 +160,15 @@
 
     .hero-btns .btn img {
         width: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero-caption p {
+        display: none;
+    }
+
+    .hero-btns .btn {
+       display : none;
     }
 }
